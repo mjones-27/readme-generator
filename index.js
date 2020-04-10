@@ -89,10 +89,13 @@ inquirer.prompt([
       const readmeFile =
       
       `# ${project}
-      // ![repoLanguage](https://img.shields.io/github/languages/top/${githubUser})
+
+      ![badge](https://img.shields.io/badge/license-${project}-darkblue)
+
+      
       
       ## Descripton
-      ${descripton}
+      ${description}
                               
       ## Table of Contents
                               
@@ -118,7 +121,7 @@ inquirer.prompt([
       <br/>
       ${name}
       <br/>
-      [GitHub Page](${link})
+      [GitHub Page](${githubURL})
       <br/>
       ${email}`
                               
