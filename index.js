@@ -41,7 +41,7 @@ inquirer.prompt([
   {
     type: "input",
     message: "What is your Github username? ",
-    name: "github"
+    name: "githubUser"
   },
   {
     type: "input",
@@ -49,27 +49,7 @@ inquirer.prompt([
     name: "email"
   },
 
-  // {
-  //   type: "checkbox",
-  //   message: "What languages do you know?",
-  //   name: "stack",
-  //   choices: [
-  //     "HTML", 
-  //     "CSS", 
-  //     "JavaScript", 
-  //     "MySQL"
-  //   ]
-  // },
-  // {
-  //   type: "list",
-  //   message: "What is your preferred method of communication?",
-  //   name: "contact",
-  //   choices: [
-  //     "email",
-  //     "phone",
-  //     "telekinesis"
-  //   ]
-  // }
+
 ]).then(function(response) {
 
   // var filename = data.name.toLowerCase().split(' ').join('') + ".json";
@@ -92,23 +72,25 @@ inquirer.prompt([
   const description = response.description;
   const installation = response.installation;
   const usage = response.usage;
-  const license = response.license;
+  const licenses = response.licenses;
   const contributors = response.contributors;
   const tests = response.tests;
-  const name = response.name;
+  const githubUser = response.githubUser;
   const email = response.email;
 
-  const githubURL = "https://github.com/" + github;
-  const githubAPI = "https://api.github.com/users/" + github;
+  const githubURL = "https://github.com/" + githubUser;
+  const githubAPI = "https://api.github.com/users/" + githubUser;
 
   axios
     .get(githubAPI).then(function(response){
       const img = response.data.avatar_url;
+      const name = response.data.name;
       const email = response.data.email;
       const readmeFile =
       
-      `# ${projectName}
-      // ![repoLanguage](https://img.shields.io/github/languages/top/${githubName}/${noSpace})
+      `# ${project}
+      // ![repoLanguage](https://img.shields.io/github/languages/top/${githubUser})
+      
       ## Descripton
       ${descripton}
                               
@@ -120,7 +102,7 @@ inquirer.prompt([
       * [Tests](#tests)
                               
       ## Installation
-      ${install}
+      ${installation}
                               
       ## Usage
       ${usage}
@@ -132,7 +114,7 @@ inquirer.prompt([
       ${tests}
                       
       ## Contact
-      ![profile image](${image})
+      ![profile image](${img})
       <br/>
       ${name}
       <br/>
@@ -140,7 +122,7 @@ inquirer.prompt([
       <br/>
       ${email}`
                               
-      fs.writeFile(`New_README/README.md`, readmeFile, err=>{
+      fs.writeFile("readme.md", readmeFile, err=>{
       if(err){
          return console.log(err)
       }
