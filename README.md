@@ -1,9 +1,9 @@
-# burgerTime2
+# readme-generator
 
-      ![badge](https://img.shields.io/badge/license-burgerTime2-darkblue)
+      ![badge](https://img.shields.io/badge/license-readme-generator-darkblue)
 
       ## Descripton
-      app about burgers
+      app to generate readme files
                               
       ## Table of Contents
                               
@@ -13,10 +13,10 @@
       * [Tests](#tests)
                               
       ## Installation
-      deplpy on heroku
+      none
                               
       ## Usage
-      not many
+      very few
                               
       ## License
       undefined
