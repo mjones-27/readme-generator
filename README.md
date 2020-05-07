@@ -1,11 +1,9 @@
-# cdsc
+# burgerTime2
 
-      ![badge](https://img.shields.io/badge/license-cdsc-darkblue)
+      ![badge](https://img.shields.io/badge/license-burgerTime2-darkblue)
 
-      
-      
       ## Descripton
-      cscs
+      app about burgers
                               
       ## Table of Contents
                               
@@ -15,22 +13,22 @@
       * [Tests](#tests)
                               
       ## Installation
-      csd
+      deplpy on heroku
                               
       ## Usage
-      csd
+      not many
                               
       ## License
       undefined
                       
       ## Tests
-      cs
+      none
                       
       ## Contact
-      ![profile image](https://avatars3.githubusercontent.com/u/15606865?v=4)
+      ![profile image](https://avatars3.githubusercontent.com/u/61710831?v=4)
       <br/>
-      cds
+      null
       <br/>
-      [GitHub Page](https://github.com/cds)
+      [GitHub Page](https://github.com/mjones-27)
       <br/>
       null

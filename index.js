@@ -1,6 +1,6 @@
-var inquirer = require("inquirer");
-var fs = require('fs');
-var axios = require("axios");
+const inquirer = require("inquirer");
+const fs = require('fs');
+const axios = require("axios");
 
 inquirer.prompt([
   {
@@ -52,22 +52,6 @@ inquirer.prompt([
 
 ]).then(function(response) {
 
-  // var filename = data.name.toLowerCase().split(' ').join('') + ".json";
-
-  // fs.writeFile(filename, JSON.stringify(data, null, '\t'), function(err) {
-
-  //   if (err) {
-  //     return console.log(err);
-  //   }
-
-  //   console.log("Success!");
-
-  // });
-
-  // const project = response.project;
-
-  // console.log(project);
-
   const project = response.project;
   const description = response.description;
   const installation = response.installation;
@@ -92,8 +76,6 @@ inquirer.prompt([
 
       ![badge](https://img.shields.io/badge/license-${project}-darkblue)
 
-      
-      
       ## Descripton
       ${description}
                               
