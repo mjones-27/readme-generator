@@ -1,34 +1,34 @@
-# burgerTime2
+# Readme Generator
 
-      ![badge](https://img.shields.io/badge/license-burgerTime2-darkblue)
+  ![badge](https://img.shields.io/badge/license-Readme Generator-darkblue)
 
-      ## Descripton
-      app about burgers
+  ## Descripton
+  Creates a readme.md file from user input
                               
-      ## Table of Contents
+  ## Table of Contents
                               
-      * [Installation](#installation)
-      * [Usage](#usage)
-      * [License](#license)
-      * [Tests](#tests)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Tests](#tests)
                               
-      ## Installation
-      deplpy on heroku
+  ## Installation
+  none
                               
-      ## Usage
-      not many
+  ## Usage
+  create readme
                               
-      ## License
-      undefined
+  ## License
+  undefined
                       
-      ## Tests
-      none
+  ## Tests
+  none
                       
-      ## Contact
-      ![profile image](https://avatars3.githubusercontent.com/u/61710831?v=4)
-      <br/>
-      null
-      <br/>
-      [GitHub Page](https://github.com/mjones-27)
-      <br/>
-      null
+  ## Contact
+  ![profile image](https://avatars3.githubusercontent.com/u/61710831?v=4)
+  <br/>
+  null
+  <br/>
+  [GitHub Page](https://github.com/mjones-27)
+  <br/>
+  null

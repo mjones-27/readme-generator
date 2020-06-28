@@ -50,7 +50,7 @@ inquirer.prompt([
   },
 
 
-]).then(function(response) {
+]).then(function (response) {
 
   const project = response.project;
   const description = response.description;
@@ -66,52 +66,52 @@ inquirer.prompt([
   const githubAPI = "https://api.github.com/users/" + githubUser;
 
   axios
-    .get(githubAPI).then(function(response){
+    .get(githubAPI).then(function (response) {
       const img = response.data.avatar_url;
       const name = response.data.name;
       const email = response.data.email;
       const readmeFile =
-      
-      `# ${project}
 
-      ![badge](https://img.shields.io/badge/license-${project}-darkblue)
+    `# ${project}
 
-      ## Descripton
-      ${description}
+  ![badge](https://img.shields.io/badge/license-${project}-darkblue)
+
+  ## Descripton
+  ${description}
                               
-      ## Table of Contents
+  ## Table of Contents
                               
-      * [Installation](#installation)
-      * [Usage](#usage)
-      * [License](#license)
-      * [Tests](#tests)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Tests](#tests)
                               
-      ## Installation
-      ${installation}
+  ## Installation
+  ${installation}
                               
-      ## Usage
-      ${usage}
+  ## Usage
+  ${usage}
                               
-      ## License
-      ${licenses}
+  ## License
+  ${licenses}
                       
-      ## Tests
-      ${tests}
+  ## Tests
+  ${tests}
                       
-      ## Contact
-      ![profile image](${img})
-      <br/>
-      ${name}
-      <br/>
-      [GitHub Page](${githubURL})
-      <br/>
-      ${email}`
-                              
-      fs.writeFile("readme.md", readmeFile, err=>{
-      if(err){
-         return console.log(err)
-      }
+  ## Contact
+  ![profile image](${img})
+  <br/>
+  ${name}
+  <br/>
+  [GitHub Page](${githubURL})
+  <br/>
+  ${email}`
+
+      fs.writeFile("readme.md", readmeFile, err => {
+        if (err) {
+          return console.log(err)
+        }
         console.log("new readme.md created")
-        })
-  })
+      })
+    })
 });
